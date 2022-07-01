@@ -1,0 +1,107 @@
+#robocontest 
+#masala 1
+print(sum(map(int,input().split())))
+
+#masala-2
+a, b = map(int,input().split())
+if a > b:
+    x=">"
+if a < b:
+    x="<"
+if a==b:
+    x="="
+print(x)
+
+#masala -3
+print(int(input())+int(input()))
+
+#masala -4
+n,k=map(int,input().split())
+print(n*k)
+
+
+#masala-9
+a = list(map(int,input().split()))
+for x in a :
+    if a.count(x) == 1:
+        print(x)
+
+
+#masala-10
+x='Yes'    
+s = int(input())
+n =sum(map(int,input().split()))
+if n<=s:
+    x='No'
+print(x)
+
+
+#masala -19
+n,k=map(int,input().split())
+print(k//n)
+
+#masala-20
+n,k=map(int,input().split())
+print(k%n)
+
+#masala-22
+print(int(input())//10)
+
+#masala-23
+print(int(input())%10)
+
+#masala-24
+h,m,s=map(int,input().split())
+h1,m1,s1=map(int,input().split())
+print(((h1*3600)+(m1*60)+s1)-((h*3600)+(m*60)+s))
+
+#masala-25
+s=int(input())
+print(f"{(s//3600)%24}:{((s%3600)//600)}{((s%3600)//60)%10}:{((s%3600)%60)//10}{((s%3600)%60)%10}")
+
+#masala-43
+n,k=map(int,input().split())
+print(k,n)
+
+#masala-58
+print(7-int(input()))
+
+#masala -59
+print(int(input())**2)
+
+#masala-309
+n = int(input())
+s =0
+while n>1:
+    s +=1
+    n = n / 2
+print(s)
+    
+
+#masala-372
+print(max(map(int,input().split())))
+
+#masala-611
+print(2+int(input()))
+
+#masala -707
+print(input())
+
+#masala-794
+a,b =map(int,input().split())
+v = (10000*a)/(b**2)
+if v < 16:
+    x ="Yuqori vazn yetishmasligi"
+if 16 <= v < 18.5 :
+    x ="Vazn yetishmasligi"
+if 18.5 <= v <= 25 :
+    x ="Ideal vazn"
+if 25 < v <= 30 :
+    x ="Ortiqcha vazn"
+if 30 < v <= 35:
+    x ="Semizlikning I darajasi"
+if 35 < v <= 40 :
+    x ="Semizlikning II darajasi"
+if 40<v :
+    x="Semizlikning III darajasi"
+print(x)
